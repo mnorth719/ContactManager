@@ -12,6 +12,8 @@
 		2392A7E8219524AA00B78A8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2392A7E6219524AA00B78A8B /* Main.storyboard */; };
 		2392A7EA219524AC00B78A8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2392A7E9219524AC00B78A8B /* Assets.xcassets */; };
 		2392A7ED219524AC00B78A8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2392A7EB219524AC00B78A8B /* LaunchScreen.storyboard */; };
+		2392A7F5219524EA00B78A8B /* ContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2392A7F4219524EA00B78A8B /* ContactService.swift */; };
+		2392A7F821952F0700B78A8B /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2392A7F721952F0700B78A8B /* Contacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2392A7E9219524AC00B78A8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2392A7EC219524AC00B78A8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2392A7EE219524AC00B78A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2392A7F4219524EA00B78A8B /* ContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactService.swift; sourceTree = "<group>"; };
+		2392A7F721952F0700B78A8B /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2392A7F821952F0700B78A8B /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				2392A7E1219524AA00B78A8B /* ContactManager */,
 				2392A7E0219524AA00B78A8B /* Products */,
+				2392A7F621952F0600B78A8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +66,17 @@
 				2392A7E9219524AC00B78A8B /* Assets.xcassets */,
 				2392A7EB219524AC00B78A8B /* LaunchScreen.storyboard */,
 				2392A7EE219524AC00B78A8B /* Info.plist */,
+				2392A7F4219524EA00B78A8B /* ContactService.swift */,
 			);
 			path = ContactManager;
+			sourceTree = "<group>";
+		};
+		2392A7F621952F0600B78A8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2392A7F721952F0700B78A8B /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +152,7 @@
 			files = (
 				2392A7E5219524AA00B78A8B /* ViewController.swift in Sources */,
 				2392A7E3219524AA00B78A8B /* AppDelegate.swift in Sources */,
+				2392A7F5219524EA00B78A8B /* ContactService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +299,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F74Z38KSGQ;
+				DEVELOPMENT_TEAM = S4VGDRE38L;
 				INFOPLIST_FILE = ContactManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +318,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F74Z38KSGQ;
+				DEVELOPMENT_TEAM = S4VGDRE38L;
 				INFOPLIST_FILE = ContactManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
